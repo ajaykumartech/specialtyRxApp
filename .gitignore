@@ -30,8 +30,10 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# env files (commit only the example)
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
@@ -41,3 +43,8 @@ example
 # generated native folders
 /ios
 /android
+
+# local tooling
+.claude/
+CLAUDE.md
+AGENTS.md
